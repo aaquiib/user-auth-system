@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="w-full h-screen bg-zinc-900 flex items-center justify-center p-4">
+        <div class="w-full max-w-md bg-zinc-800 p-10 text-white rounded-lg border border-zinc-700 shadow-lg">
+            <h1 class="text-3xl tracking-tighter mb-6 text-center">Create User</h1>
+
+            <form class="space-y-4" action="/create" method="post">
+                <input class="w-full bg-transparent outline-none rounded-md px-3 py-2 border-2 border-zinc-700"
+                    type="text" placeholder="Username" name="username" required>
+                <input class="w-full bg-transparent outline-none rounded-md px-3 py-2 border-2 border-zinc-700"
+                    type="email" placeholder="Email" name="email" required>
+                <input class="w-full bg-transparent outline-none rounded-md px-3 py-2 border-2 border-zinc-700"
+                    type="password" placeholder="Password" name="password" required>
+                <input class="w-full bg-transparent outline-none rounded-md px-3 py-2 border-2 border-zinc-700"
+                    type="number" placeholder="Age" name="age" required>
+
+                <input class="w-full bg-blue-500 text-white rounded-md font-bold px-3 py-2 mt-4 hover:bg-blue-700 transition duration-300 cursor-pointer"
+                    type="submit" value="Create User">
+            </form>
+
+            <div class="mt-12 text-center">
+                <p class="text-zinc-400 mt-4">Already have an account?</p>
+                <a href="/login" class="text-blue-500 hover:underline">Log in</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
